@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #ee927c;
+  padding: 5vh 5vw;
+  z-index: 2;
+}
+header h1 a {
+  font: bold 40px/50px "Architects Daughter";
+  color: #ef6c00;
+}
+header #gnb {
+  display: flex;
+}
+header #gnb li {
+  margin: 0px 45px;
+}
+header #gnb li a {
+  font: 18px/1 "Architects Daughter";
+  color: #ef6c00;
+  letter-spacing: 1px;
+}
+header .sns {
+  display: flex;
+}
+header .sns li {
+  margin: 0px 15px;
+}
+header .sns li a {
+  font-size: 17px;
+  color: #ee927c;
+}
+header #snb {
+  display: none;
+}
+header .btn-menu {
+  display: none;
+}
+
+figure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+figure video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+figure .text {
+  position: absolute;
+  left: 6vw;
+  top: 50%;
+  transform: translateY(-50%);
+}
+figure .text p {
+  font: normal 8vw/1 "Fredericka the Great";
+  color: rgb(255, 167, 90);
+}
+figure .text ul {
+  display: flex;
+  margin-top: 30px;
+}
+figure .text li {
+  margin: 0px 30px;
+}
+figure .text li i {
+  font-size: 20px;
+  color: rgb(255, 167, 90);
+  margin-right: 10px;
+}
+figure .text li strong {
+  font: 16px/1 "Architects Daughter";
+  color: rgb(255, 167, 90);
+  letter-spacing: 1px;
+}
+
+footer {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font: 12px/1 "arial";
+  letter-spacing: 2px;
+  color: rgb(228, 89, 67);
+  padding: 4vh 0;
+}
+
+@media screen and (max-width: 968px) {
+  header #gnb {
+    display: none;
+  }
+  header .sns {
+    display: none;
+  }
+  header .btn-menu {
+    display: block;
+    color: #ef6c00;
+  }
+  header #snb {
+    display: block;
+  }
+  header #snb .sub-menu {
+    position: absolute;
+    padding: 10px 25px;
+    background-color: #ee927a;
+    border: 1px solid #f3ba8b;
+    border-radius: 10px;
+    right: 5vw;
+    text-align: right;
+    opacity: 1;
+    transition: 0.4s;
+  }
+  header #snb .sub-menu.hide {
+    opacity: 0;
+  }
+  header #snb li {
+    padding: 10px 0px;
+    font: 16px/1 "Architects Daughter";
+    color: aliceblue;
+  }
+  header #snb li a {
+    margin-left: 8px;
+    color: aliceblue;
+  }
+  figure .text p {
+    font-size: 16vw;
+  }
+}/*# sourceMappingURL=style.css.map */
